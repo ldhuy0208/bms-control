@@ -9,7 +9,12 @@ function App() {
       .then((response) => setDien(response.data.value))
       .catch(console.log);
   }, []);
-  return <div>Gia tri dien: {dien}</div>;
+  return (
+    <div>
+      <div>Gia tri dien: {dien}</div>
+      <div>Gia tri khac: {dien}</div>
+    </div>
+  );
 }
 
 export default App;
