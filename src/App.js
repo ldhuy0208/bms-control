@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     updateData();
-    const timmer = setInterval(updateData, 7000);
+    const timmer = setInterval(updateData, 10000);
     return () => {
       clearInterval(timmer);
     };
