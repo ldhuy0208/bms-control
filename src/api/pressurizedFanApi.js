@@ -1,6 +1,6 @@
 import axiosClient from "./axiosClient";
 
-export default {
+const pressurizedFanApi = {
   turnOnPressurizedFan: () => {
     return axiosClient.post("/PressurizedFan", {
       isOn: true,
@@ -12,3 +12,5 @@ export default {
     });
   },
 };
+
+export default pressurizedFanApi;
