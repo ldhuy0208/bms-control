@@ -1,0 +1,16 @@
+0: tan so
+1: dien ap pha
+2: dien ap trung binh
+3: cong suat bieu kien
+4: he so cong suat pf
+5: dong dien pha
+6:
+8:cong suat tieu thu 
+7: 
+9:
+
+C:\Users\haich\Desktop\New folder\huy>npm start
+
+lt --port 6969
+	-> sinh ra 1 duong link, dan vo chrome -> an continoue.
+	-> thay link vo read.js

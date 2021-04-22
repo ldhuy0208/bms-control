@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axiosClient from "./api/axiosClient";
+import CurtainsApi from "./api/CurtainsApi";
+import LampApi from "./api/LampApi";
 import pressurizedFanApi from "./api/pressurizedFanApi";
 
 function App() {
@@ -26,6 +28,27 @@ function App() {
   const turnOffPressurizedFan = () => {
     pressurizedFanApi.turnOffPressurizedFan();
   };
+
+
+  const turnOnLamp = () => {
+    LampApi.turnOnLamp();
+  };
+  const turnOffLamp = () => {
+    LampApi.turnOffLamp();
+  };
+
+
+  const turnOnCurtains = () => {
+  CurtainsApi.turnOnCurtains();
+  };
+  const turnOffCurtains = () => {
+    CurtainsApi.turnOffCurtains();
+  };
+
+
+
+
+
   return (
     <div>
       <div>Tần số: {data[0]?.point_value}</div>
@@ -39,6 +62,10 @@ function App() {
       <button onClick={turnOffPressurizedFan}>
         Tat quat dieu app quat dieu ap
       </button>
+      <button onClick={turnOnLamp}>Bat Den</button>
+      <button onClick={turnOffLamp}>Tat Den</button>
+      <button onClick={turnOnCurtains}>Keo rem xuong</button>
+      <button onClick={turnOffCurtains}>Keo rem len</button>
     </div>
   );
 }
