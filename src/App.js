@@ -51,13 +51,19 @@ function App() {
 
   return (
     <div>
-      <div>Tần số: {data[0]?.point_value}</div>
-      <div>Điện áp pha: {data[1]?.point_value}</div>
-      <div>Điện áp trung bình: {data[2]?.point_value}</div>
-      <div>Công suất biểu kiến: {data[3]?.point_value}</div>
-      <div>Hệ sống công suất PF: {data[4]?.point_value}</div>
-      <div>Dòng điện pha: {data[5]?.point_value}</div>
-      <div>Công suất tiêu thụ: {data[8]?.point_value}</div>
+      <div>Tần số: {data[34]?.point_value}</div>
+      <div>Điện áp pha: {data[32]?.point_value}</div>
+      <div>Điện áp tiêu thụ: {data[36]?.point_value}</div>
+      <div>Hệ sống công suất PF: {data[35]?.point_value}</div>
+      <div>Dòng điện pha: {data[33]?.point_value}</div>
+      <div>Cài đặt giá trị Lux: {data[21]?.point_value}</div>
+      <div>Giá trị CBAS1: {data[23]?.point_value}</div>
+      <div>Giá trị CBAS2: {data[24]?.point_value}</div>
+      <div>Lux hiện tại: {data[22]?.point_value}</div>
+      <div>Nhiệt độ điều khiển quạt: {data[16]?.point_value}</div>
+      <div>Nhiệt độ điều khiển sò: {data[17]?.point_value}</div>
+      <div>Độ ẩm hiện tại: {data[7]?.point_value}</div>
+      <div>Nhiệt độ hiện tại: {data[6]?.point_value}</div>
       <button onClick={turnOnPressurizedFan}>Bat quat dieu ap</button>
       <button onClick={turnOffPressurizedFan}>
         Tat quat dieu app quat dieu ap
